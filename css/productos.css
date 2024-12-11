@@ -1,0 +1,325 @@
+/* MENU AUXILIAR */
+
+.contact-button {
+    display: inline-flex; /* Alinea ícono y texto horizontalmente */
+    align-items: center; /* Centra verticalmente ícono y texto */
+    background-color: #25d366; /* Verde WhatsApp */
+    color: white !important;
+    padding: 4px 8px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de texto */
+    text-decoration: none; /* Sin subrayado */
+    vertical-align: middle; /* Centra con el texto de la barra */ 
+    }
+    .contact-button .icon {
+    height: 18px;
+    width: 18px;
+    }
+    .contact-button:hover {
+    background-color: #68fc9c;  
+    }
+    .navbar-text {
+      display: inline-flex; 
+      align-items: center; 
+    }
+
+/* LOGO Y NAVBAR */    
+.logo {
+      height: 50px;
+      width: auto;
+      margin-right: 10px; 
+   }
+  
+    /* Estilo del texto al lado del logo */
+    .logo-texto {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600; /* Texto destacado */
+      font-size: 1.5rem; /* Tamaño de texto */
+      color: #f5f4f4; /* Color base */
+      text-transform: uppercase; /* Texto en mayúsculas */
+      letter-spacing: 0.05em; /* Espaciado entre letras */
+      transition: color 0.3s ease; /* Suavizado para hover */ 
+    }
+  
+    .logo-texto .highlight {
+      color: #25d366; /* Verde WhatsApp para "Fastfood" */
+      font-weight: 700; /* Más destacado */
+      background: linear-gradient(90deg, #25d366, #20b955);
+      background-clip: text;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; /* Rellena el texto con el gradiente */
+      text-emphasis-color: transparent;
+    }
+  
+    .logo-texto:hover {
+      color: #000; /* Cambia el color base al pasar el mouse */
+    }
+  
+    .logo-texto .highlight:hover {
+      background: linear-gradient(90deg, #20b955, #1a9445); /* Gradiente más oscuro */
+    }
+    
+   
+   
+.slogan {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #6c757d; /* Color gris Bootstrap */
+      margin-bottom: 20px;
+      }
+      .navbar-brand img {
+        height: 75px;
+        width: auto;
+        margin-right: 10px;
+      }
+   
+      main {
+        margin-left: 250px; /* Espacio suficiente para evitar el solapamiento */
+        padding: 20px; /* Espaciado interno */
+    }      
+    
+    
+
+.container-fluid {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+        gap: 20px; /* Espaciado entre aside y main */
+    }
+
+
+h1.text-center {
+        font-size: 2.5rem; /* Tamaño más grande */
+        font-weight: 700; /* Más grueso */
+        color: #333; /* Color impactante (oscuro) */
+        margin-top: 20px; /* Espacio desde el borde superior */
+        margin-bottom: 30px; /* Espacio hacia los elementos inferiores */
+        letter-spacing: 0.05em; /* Espaciado entre letras */
+        text-align: center;
+    }
+
+/* Barra lateral */    
+aside {
+    flex: 0 0 20%; /* El aside ocupará el 25% del ancho en pantallas grandes */
+    max-width: 250px; /* Ancho máximo */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    height: 100%; /* Altura automática */
+    margin-bottom: 20px; /* Espacio inferior */
+    }
+    aside h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #343a40;
+    }
+
+    aside ul {
+    padding-left: 0;
+    list-style: none;
+    }
+
+    aside ul li {
+    margin-bottom: 0.8rem;
+    }
+
+    aside ul li a {
+    text-decoration: none;
+    color: #343a40;
+    transition: color 0.3s;
+    }
+
+    aside ul li a:hover {
+    color: #007bff;
+    }
+    /* Contenido principal */
+
+/* Estilo para las tarjetas */
+.row-cols-1 .card {
+    max-width: 100%; /* Para que las tarjetas sean fluidas */
+}
+
+/* Imágenes dentro de las tarjetas */
+.card img {
+    width: 100%; /* Asegura que las imágenes sean responsivas */
+    height: auto;
+    object-fit: cover; /* Evita distorsión */
+}
+
+
+ /* Responsive */
+@media (max-width: 768px) {
+        .container-fluid {
+            flex-direction: column; /* El aside y el main se apilan verticalmente */
+        }
+    
+        aside {
+            flex: 0 0 auto; /* Ajusta el ancho del aside */
+            width: 100%; /* Ocupará el 100% en pantallas pequeñas */
+            border-right: none;
+            margin-bottom: 20px; /* Espacio inferior para pantallas pequeñas */
+        }
+    
+        main {
+            flex: 0 0 auto;
+            width: 100%; /* Asegura que el contenido ocupe todo el ancho */
+            padding-top: 10px; /* Ajusta el espaciado superior */
+        }
+        .card {
+            margin-bottom: 20px; /* Añade espaciado entre tarjetas */
+        }
+    } 
+  
+.productos-destacados h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #343a40;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+  }
+  
+  .producto-destacado-alt {
+      background: linear-gradient(135deg, #ff8800, #ff5733); /* Gradiente moderno */
+      border-radius: 15px; /* Bordes redondeados */
+      padding: 20px;
+      max-width: 100%; /* Ajuste para columnas */
+      margin: auto; /* Centrado */
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover */
+  }
+  
+  .producto-destacado-alt:hover {
+      transform: scale(1.05); /* Efecto de ampliación */
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+  }
+  
+  .producto-destacado-alt .titulo-destacado {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+  
+  .producto-destacado-alt .contenedor-img {
+      position: relative;
+      padding: 10px;
+      background-color: white; /* Fondo blanco para destacar la imagen */
+      border-radius: 50%;
+      display: inline-block;
+  }
+  
+  .producto-destacado-alt img {
+      max-width: 120px; /* Ajusta el tamaño de las imágenes */
+      border-radius: 50%;
+  }
+  
+  .producto-destacado-alt .precio-destacado {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fffcf5; /* Color claro */
+      margin-bottom: 15px;
+  }
+  
+  .producto-destacado-alt .btn {
+      border-radius: 50px; /* Botón con estilo redondeado */
+      padding: 10px 20px;
+      font-size: 1.1rem;
+  }
+  
+  
+  
+.btn-primary {
+      padding: 0.75rem 1.5rem;
+      background-color: #ff8800;
+      color: white;
+      border: none;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background-color: #cc6e00;
+      
+    }
+    
+    .btn-primary a {
+      color: white;
+      text-decoration: none;
+    }  
+  
+  
+  
+  .btn-secondary {
+      padding: 0.75rem 1.5rem;
+      background-color: #ff8800;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-secondary:hover {
+      background-color: #cc6e00;  
+      }   
+    
+    .btn-secondary a {
+      color: white;
+      text-decoration: none;
+  }
+  
+.productos {
+      padding: 2rem 1rem;
+      background-color: #f8f9fa;
+    }
+    
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      justify-items: center;
+    }
+    
+    .product-item img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    
+    .product-item h3 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    
+    .product-item p {
+      color: #666;  
+    }
+  
+ 
+  
+footer {
+      border-top: 2px solid #f8c102; /* Línea decorativa */
+    }
+  
+    footer h5 {
+      color: #f8c102; /* Destacar los títulos */
+      margin-bottom: 1rem;
+    }
+  
+    footer a:hover {
+      text-decoration: underline; /* Resaltar enlaces al pasar el mouse */
+    }
+    footer p {
+      color: #666; /* Color de letra del pie de página */
+      margin-bottom: 0;
+    }
+  
+    footer img {
+      margin-top: 1rem; /* Espacio entre el logo y el texto */
+}

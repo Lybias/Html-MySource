@@ -1,0 +1,22 @@
+ESTRUCTURA DE MI PROYECTO WEB
+*****************************
+
+/Proyecto_Lybias_ PIRATAS FASTFOOD
+│
+├── /css
+│   └── styles.css
+├── /js
+│   └── script.js
+├── /img
+│   └── (imágenes necesarias)
+├── /lib
+│   └── (librerías externas como Bootstrap, jQuery, etc.)
+├── index.html (Incluye mi portada)
+├── main.html
+├── productos.html
+├── promociones.html
+├── nosotros.html
+├── contactenos.html
+├── pagos_visa.html
+
+

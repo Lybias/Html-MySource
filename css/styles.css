@@ -1,0 +1,342 @@
+ 
+ .contact-button {
+  display: inline-flex; /* Alinea ícono y texto horizontalmente */
+  align-items: center; /* Centra verticalmente ícono y texto */
+  background-color: #25d366; /* Verde WhatsApp */
+  color: white !important;
+  padding: 4px 8px; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de texto */
+  text-decoration: none; /* Sin subrayado */
+  vertical-align: middle; /* Centra con el texto de la barra */ 
+  }
+  .contact-button .icon {
+  height: 18px;
+  width: 18px;
+  }
+  .contact-button:hover {
+  background-color: #68fc9c;  
+  }
+  .navbar-text {
+    display: inline-flex; 
+    align-items: center; 
+  }
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-right: 10px; 
+ }
+
+  /* Estilo del texto al lado del logo */
+  .logo-texto {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Texto destacado */
+    font-size: 1.5rem; /* Tamaño de texto */
+    color: #f5f4f4; /* Color base */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 0.05em; /* Espaciado entre letras */
+    transition: color 0.3s ease; /* Suavizado para hover */ 
+  }
+
+  .logo-texto .highlight {
+    color: #25d366; /* Verde WhatsApp para "Fastfood" */
+    font-weight: 700; /* Más destacado */
+    background: linear-gradient(90deg, #25d366, #20b955);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; /* Rellena el texto con el gradiente */
+    text-emphasis-color: transparent;
+  }
+
+  .logo-texto:hover {
+    color: #000; /* Cambia el color base al pasar el mouse */
+  }
+
+  .logo-texto .highlight:hover {
+    background: linear-gradient(90deg, #20b955, #1a9445); /* Gradiente más oscuro */
+  }
+  
+ 
+ 
+ /* Estilos para el menú lateral */
+#menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Comienza oculto */
+  width: 250px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease-in-out; /* Transición suave */
+  z-index: 1000;
+  padding: 1rem;
+}
+#menu-lateral a {
+    color: #ff8800;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+#menu-lateral a:hover {
+    background-color: #9fa249;
+}
+#menu-lateral .menu-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+/* Botón para abrir/cerrar menú */
+#toggle-menu {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1100;
+  background-color: #ff8800;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+
+ /* Estilo personalizado para el título y el slogan */
+.titulo-principal {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    }
+    .slogan {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6c757d; /* Color gris Bootstrap */
+    margin-bottom: 20px;
+    }
+    .navbar-brand img {
+      height: 75px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+.carousel-inner img {
+  width: 50%; 
+  height: auto; 
+  max-height: 500px;
+  object-fit: cover; /* Mantiene proporciones y rellena el contenedor */
+  border-radius: 10px; /* Opcional: redondear bordes de las imágenes */
+    }
+
+    /* Fondo de relleno opcional para imágenes con espacios */
+    .carousel-inner {
+  background-color: #f8f9fa; /* Fondo gris claro */
+    }
+
+    @media (max-width: 1200px) {
+      .carousel-inner img {
+        max-height: 400px; /* Reducimos la altura máxima en pantallas medianas */
+      }
+    }
+
+    /* Responsivo: ajustar altura en pantallas más pequeñas */
+    @media (max-width: 768px) {
+  .carousel-inner img {
+    height: auto;
+    object-fit: contain;
+  }
+    }
+
+  
+    @media (max-width: 480px) {
+  .carousel-inner img {
+    height: 200px;
+  }
+    }
+
+    /* Personalización de las leyendas */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  padding: 1rem;
+  border-radius: 10px;  
+    }
+
+    /* Personalización de los controles */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+  background-color: #ff8800; /* Color de fondo llamativo */
+  border-radius: 50%; /* Forma redondeada */
+  width: 3rem;
+  height: 3rem;
+    }
+ 
+
+.hero {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .hero .highlight{
+    font-size: 1.2rem;
+    color: #ff8800; /* Color llamativo */
+    margin-bottom: 1rem;
+  }
+
+.btn-primary {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #cc6e00;
+    
+  }
+  
+  .btn-primary a {
+    color: white;
+    text-decoration: none;
+  }  
+
+
+.contenido-principal {
+    margin-left: 0; 
+    text-align: center;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+    background-color: #fff;
+    }
+    .contenido-expandido {
+    margin-left: 250px; /* Ajustar contenido cuando el menú lateral está visible */
+    }
+
+.btn-secondary {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-secondary:hover {
+    background-color: #cc6e00;  
+    }   
+  
+  .btn-secondary a {
+    color: white;
+    text-decoration: none;
+}
+
+.productos {
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+  
+  .product-item img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product-item h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .product-item p {
+    color: #666;
+  }
+
+.video-section {
+    background-color: #f8f9fa; /* Fondo claro para diferenciarlo */
+    padding: 40px 20px;
+  }
+
+  .video-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .video-container {
+    position: relative;
+    max-width: 900px; /* Ancho máximo del video */
+    margin: 0 auto; /* Centrar el video */
+  }
+
+  .responsive-video {
+    width: 100%; /* Ajustar el ancho del video al contenedor */
+    height: auto; /* Mantener proporción */
+    border-radius: 10px; /* Bordes redondeados para diseño */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+  }
+
+.promociones .card {
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .promociones .card:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+  }
+
+  .promociones .btn {
+    border-radius: 20px; /* Botón redondeado */
+    text-transform: uppercase;
+    background-color: #ff8800;
+    color: white;
+    
+  }
+
+  .promociones h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .promociones .card-title {
+    font-size: 1.25rem;
+  }
+
+
+footer {
+    border-top: 2px solid #f8c102; /* Línea decorativa */
+  }
+
+  footer h5 {
+    color: #f8c102; /* Destacar los títulos */
+    margin-bottom: 1rem;
+  }
+
+  footer a:hover {
+    text-decoration: underline; /* Resaltar enlaces al pasar el mouse */
+  }
+  footer p {
+    color: #666; /* Color de letra del pie de página */
+    margin-bottom: 0;
+  }
+
+  footer img {
+    margin-top: 1rem; /* Espacio entre el logo y el texto */
+}
