@@ -57,10 +57,8 @@
     .logo-texto .highlight:hover {
       background: linear-gradient(90deg, #20b955, #1a9445); /* Gradiente más oscuro */
     }
-    
-   
-   
-.slogan {
+     
+    .slogan {
       text-align: center;
       font-size: 1.2rem;
       color: #6c757d; /* Color gris Bootstrap */
@@ -72,7 +70,7 @@
         margin-right: 10px;
       }
    
-      main {
+    .main {
         margin-left: 250px; /* Espacio suficiente para evitar el solapamiento */
         padding: 20px; /* Espaciado interno */
     }      
@@ -186,7 +184,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
 }
-  
+
+
 h1 {
       color: #343a40;
       font-weight: 700;
@@ -213,6 +212,58 @@ h1 {
   }
 
    
+/* ACORDEON FAQ */
+.accordion-button {
+  font-weight: bold;
+  color: #333;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-button:hover {
+  background-color: #007bff; /* Fondo azul al pasar el cursor */
+  color: white; /* Texto blanco al pasar el cursor */
+}
+
+/* Estilo de las respuestas (accordion-body) */
+.accordion-body {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradiente atractivo */
+  color: white; /* Color del texto */
+  border-radius: 5px;
+  padding: 15px;
+  animation: fadeIn 0.5s ease-in-out; /* Animación al abrir */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Animación para las respuestas */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Espaciado entre items */
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+/* Bordes personalizados */
+.accordion-item {
+  border: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* Elimina el borde azul de enfoque */
+}
+
+
+
+
   
 footer {
       border-top: 2px solid #f8c102; /* Línea decorativa */

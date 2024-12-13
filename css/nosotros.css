@@ -1,0 +1,226 @@
+/* MENU AUXILIAR */
+.contact-button {
+    display: inline-flex; /* Alinea ícono y texto horizontalmente */
+    align-items: center; /* Centra verticalmente ícono y texto */
+    background-color: #25d366; /* Verde WhatsApp */
+    color: white !important;
+    padding: 4px 8px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de texto */
+    text-decoration: none; /* Sin subrayado */
+    vertical-align: middle; /* Centra con el texto de la barra */ 
+    }
+    .contact-button .icon {
+    height: 18px;
+    width: 18px;
+    }
+    .contact-button:hover {
+    background-color: #68fc9c;  
+    }
+    .navbar-text {
+      display: inline-flex; 
+      align-items: center; 
+    }
+
+/* NAVBAR MENU */    
+.logo {
+      height: 50px;
+      width: auto;
+      margin-right: 10px; 
+   }
+  
+    /* Estilo del texto al lado del logo */
+    .logo-texto {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600; /* Texto destacado */
+      font-size: 1.5rem; /* Tamaño de texto */
+      color: #f5f4f4; /* Color base */
+      text-transform: uppercase; /* Texto en mayúsculas */
+      letter-spacing: 0.05em; /* Espaciado entre letras */
+      transition: color 0.3s ease; /* Suavizado para hover */ 
+    }
+  
+    .logo-texto .highlight {
+      color: #25d366; /* Verde WhatsApp para "Fastfood" */
+      font-weight: 700; /* Más destacado */
+      background: linear-gradient(90deg, #25d366, #20b955);
+      background-clip: text;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; /* Rellena el texto con el gradiente */
+      text-emphasis-color: transparent;
+    }
+  
+    .logo-texto:hover {
+      color: #11ea23; /* Cambia el color base al pasar el mouse */
+    }
+  
+    .logo-texto .highlight:hover {
+      background: linear-gradient(90deg, #f4f6f4, #d8820a); /* Gradiente más oscuro */
+      background-clip: text;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; /* Rellena el texto con el gradiente */
+      text-emphasis-color: transparent;
+    }
+     
+    .slogan {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #6c757d; /* Color gris Bootstrap */
+      margin-bottom: 20px;
+    }
+    .navbar-brand img {
+        height: 75px;
+        width: auto;
+        margin-right: 10px;
+    }
+
+/* Pie de Pagina */  
+footer {
+        border-top: 2px solid #f8c102; /* Línea decorativa */
+      }
+    
+      footer h5 {
+        color: #f8c102; /* Destacar los títulos */
+        margin-bottom: 1rem;
+      }
+    
+      footer a:hover {
+        text-decoration: underline; /* Resaltar enlaces al pasar el mouse */
+      }
+      footer p {
+        color: #666; /* Color de letra del pie de página */
+        margin-bottom: 0;
+      }
+    
+      footer img {
+        margin-top: 1rem; /* Espacio entre el logo y el texto */
+  }
+  
+/* Boton Naranja */ 
+.btn-primary {
+    
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    text-decoration: none;
+    
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  
+    }
+  
+    .btn-primary:hover {
+    background-color: #cc6e00;
+    transform: scale(1.1);
+    
+    }
+  
+
+
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #11ea23, #144d8a);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+
+/* Secciones */
+section {
+  padding: 2rem 0;
+}
+
+section.bg-light {
+  background-color: #f7f9fc;
+}
+
+section h2 {
+  font-weight: bold;
+  color: #11ea23;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  font-weight: bold;
+  color: #11ea23;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+
+
+section p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.row div:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header, footer {
+      text-align: center;
+  }
+
+  .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .row div {
+      margin-bottom: 1.5rem;
+  }
+}
+
+/* Testimonios*/
+blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #333;
+}
+
+blockquote footer {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0d6efd; /* Azul corporativo */
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #ffc107; /* Amarillo para destacar */
+}

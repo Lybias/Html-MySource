@@ -1,0 +1,162 @@
+/* MENU AUXILIAR */
+.contact-button {
+    display: inline-flex; /* Alinea ícono y texto horizontalmente */
+    align-items: center; /* Centra verticalmente ícono y texto */
+    background-color: #25d366; /* Verde WhatsApp */
+    color: white !important;
+    padding: 4px 8px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de texto */
+    text-decoration: none; /* Sin subrayado */
+    vertical-align: middle; /* Centra con el texto de la barra */ 
+    }
+    .contact-button .icon {
+    height: 18px;
+    width: 18px;
+    }
+    .contact-button:hover {
+    background-color: #68fc9c;  
+    }
+    .navbar-text {
+      display: inline-flex; 
+      align-items: center; 
+    }
+
+/* NAVBAR MENU */    
+.logo {
+      height: 50px;
+      width: auto;
+      margin-right: 10px; 
+   }
+  
+    /* Estilo del texto al lado del logo */
+    .logo-texto {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600; /* Texto destacado */
+      font-size: 1.5rem; /* Tamaño de texto */
+      color: #f5f4f4; /* Color base */
+      text-transform: uppercase; /* Texto en mayúsculas */
+      letter-spacing: 0.05em; /* Espaciado entre letras */
+      transition: color 0.3s ease; /* Suavizado para hover */ 
+    }
+  
+    .logo-texto .highlight {
+      color: #25d366; /* Verde WhatsApp para "Fastfood" */
+      font-weight: 700; /* Más destacado */
+      background: linear-gradient(90deg, #25d366, #20b955);
+      background-clip: text;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; /* Rellena el texto con el gradiente */
+      text-emphasis-color: transparent;
+    }
+  
+    .logo-texto:hover {
+      color: #11ea23; /* Cambia el color base al pasar el mouse */
+    }
+  
+    .logo-texto .highlight:hover {
+      background: linear-gradient(90deg, #f4f6f4, #d8820a); /* Gradiente más oscuro */
+      background-clip: text;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; /* Rellena el texto con el gradiente */
+      text-emphasis-color: transparent;
+    }
+     
+    .slogan {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #6c757d; /* Color gris Bootstrap */
+      margin-bottom: 20px;
+    }
+    .navbar-brand img {
+        height: 75px;
+        width: auto;
+        margin-right: 10px;
+    }
+
+/* FOOTER */  
+footer {
+        border-top: 2px solid #f8c102; /* Línea decorativa */
+      }
+    
+      footer h5 {
+        color: #f8c102; /* Destacar los títulos */
+        margin-bottom: 1rem;
+      }
+    
+      footer a:hover {
+        text-decoration: underline; /* Resaltar enlaces al pasar el mouse */
+      }
+      footer p {
+        color: #666; /* Color de letra del pie de página */
+        margin-bottom: 0;
+      }
+    
+      footer img {
+        margin-top: 1rem; /* Espacio entre el logo y el texto */
+  }
+
+
+  body {
+    background-color: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #ff8800;
+    border: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #cc6e00;
+    transform: scale(1.05);
+}
+
+/* Iframes */
+.card-header {
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Espaciado Responsivo */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+.text-contact{
+    color: #11ea23;
+}
+
+
+/* Animaciones */
+.animate__fadeInDown {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.animate__fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.animate__fadeInLeft {
+    animation: fadeInLeft 1.5s ease-in-out;
+}

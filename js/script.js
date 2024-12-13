@@ -63,3 +63,59 @@ saboresCarrusel.addEventListener('mouseout', () => {
     const carousel = bootstrap.Carousel.getInstance(saboresCarrusel);
     carousel.cycle();
 });
+
+// Acordeon
+const faqAccordion = document.querySelectorAll('.accordion-button');
+faqAccordion.forEach((button) => {
+    button.addEventListener('click', () => {
+        // Cierra todas las respuestas
+        faqAccordion.forEach((btn) => {
+            const collapse = btn.getAttribute('data-bs-target');
+            if (collapse !== button.getAttribute('data-bs-target')) {
+                document.querySelector(collapse).classList.remove('show');
+            }
+        });
+    });
+});
+
+
+// MENSAJE POP OUT DE SUSCRIPCION
+const subscriptionForm = document.getElementById('subscription-form');
+const emailInput = document.getElementById('email-input');
+const subscriptionMessage = document.getElementById('subscription-message');
+
+// Agregamos un evento para manejar el envío del formulario
+subscriptionForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Evitar que la página se recargue
+
+    const email = emailInput.value.trim(); // Obtenemos el correo ingresado
+
+    if (email) {
+        // Mostramos el mensaje de suscripción exitosa
+        subscriptionMessage.textContent = '¡Suscripción realizada correctamente!';
+        subscriptionMessage.style.display = 'block';
+
+        // Limpiamos el campo de correo después de enviar
+        emailInput.value = '';
+
+        // Ocultamos el mensaje después de 3 segundos
+        setTimeout(() => {
+            subscriptionMessage.style.display = 'none';
+        }, 3000);
+    } else {
+        // Si el correo está vacío, mostramos un mensaje de error
+        subscriptionMessage.textContent = 'Por favor, ingresa un correo válido.';
+        subscriptionMessage.style.color = 'red';
+        subscriptionMessage.style.display = 'block';
+    }
+    if (email) {
+        subscriptionMessage.textContent = '¡Suscripción realizada correctamente!';
+        subscriptionMessage.className = 'success'; // Mensaje en verde
+    } else {
+        subscriptionMessage.textContent = 'Por favor, ingresa un correo válido.';
+        subscriptionMessage.className = 'error'; // Mensaje en rojo
+    
+    }
+});
+
+
